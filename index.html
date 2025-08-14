@@ -12,6 +12,42 @@
         <h2>Hello, Mun</h2>
         <p>Một chiếc web siêu cute dành cho mun! 🌸</p>
         <button class="cute-button">Click Me!</button>
+        <script>
+        
+            const button = document.querySelector('.cute-button');
+
+        
+            button.addEventListener('click', function() {
+           
+                document.open();
+            
+                document.write(`
+                    <!DOCTYPE html>
+                    <html lang="vi">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Trang Mới</title>
+                        <style>
+                            body {
+                                font-family: sans-serif;
+                                text-align: center;
+                                padding-top: 50px;
+                                background-color: #e6f7ff;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Chào mừng đến với trang mới! 🎉</h1>
+                        <p>Nội dung trang cũ đã bị thay thế hoàn toàn.</p>
+                    </body>
+                    </html>
+                `);
+            
+                document.close();
+            });
+        </script>
+
     </div>
 </body>
 </html>
