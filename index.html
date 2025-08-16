@@ -42,11 +42,25 @@
                             <h1  style="color: Tomato;">Mun là một công chúa rất chăm chỉ! 🎉</h1>
                             <img style="width: 400px; height: 400px;" src="https://raw.githubusercontent.com/zecter310/test/refs/heads/main/Cat Working GIF.gif">
                         </div>
-                        <div id="img2">
+                        <div id="img2" class="hidden">
                             <h1  style="color: Tomato;">Không được phá, Mun đang tập trung học đóa</h1>
                             <img style="width: 400px; height: 400px;" src="https://raw.githubusercontent.com/zecter310/test/refs/heads/main/Cat Love GIF by NGcorpvtc.gif">
                         </div>
-                        <button class="cute-button">Phá Mun</button>
+                        <button onclick="toggleText()" class="cute-button">Phá Mun</button>
+                        <script>
+                            function toggleText() {
+                                const text1 = document.getElementById('img1');
+                                const text2 = document.getElementById('img2');
+                                text1.classList.add('fade-out');
+                                setTimeout(() => {
+                                        text1.classList.add('hidden');
+                                        text1.classList.remove('fade-out');
+                                        text2.classList.remove('hidden');
+                                        text2.classList.add('fade-in');
+                                    }, 500);
+            
+                            }
+                        </script>
                     </body>
                     </html>
                 `);
