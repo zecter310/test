@@ -47,7 +47,18 @@
                             <img style="width: 400px; height: 400px;" src="https://raw.githubusercontent.com/zecter310/test/refs/heads/main/Cat Love GIF by NGcorpvtc.gif">
                         </div>
                         <button onclick="toggleText()" class="cute-button">Phá Mun</button>
-                        
+                        <script>
+                            function toggleText() {
+                                const text1 = document.getElementById('img1');
+                                const text2 = document.getElementById('img2');
+                                text1.classList.add('fade-out');
+                                setTimeout(() => {
+                                    text1.classList.add('hidden');
+                                    text1.classList.remove('fade-out');
+                                    text2.classList.remove('hidden');
+                                    text2.classList.add('fade-in');
+                            }
+                        </script>
                     </body>
                     </html>
                 `);
