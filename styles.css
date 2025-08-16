@@ -39,11 +39,28 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-   )l;
+   
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 .cute-button:hover {
     background: #ff85a2;
+}
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; display: none; }
+    to { opacity: 1; display: block; }
+}
+.hidden {
+    display: none;
 }
